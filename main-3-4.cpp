@@ -1,13 +1,13 @@
 #include <iostream>
-extern void check_grade(char);
+extern void print_pass_fail(char);
 
 int main() {
-  check_grade('A');  // Outputs: Pass
-  check_grade('B');  // Outputs: Pass
-  check_grade('C');  // Outputs: Pass
-  check_grade('D');  // Outputs: Fail
-  check_grade('E');  // Outputs: Fail
-  check_grade('F');  // Outputs: Nothing
+  print_pass_fail('A');  // Outputs: Pass
+  print_pass_fail('B');  // Outputs: Pass
+  print_pass_fail('C');  // Outputs: Pass
+  print_pass_fail('D');  // Outputs: Fail
+  print_pass_fail('E');  // Outputs: Fail
+  print_pass_fail('F');  // Outputs: Nothing
 
   return 0;
 }
