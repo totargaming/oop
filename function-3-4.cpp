@@ -1,6 +1,6 @@
 #include <iostream>
 
-void check_grade(char grade) {
+void print_pass_fail(char grade) {
   switch (grade) {
     case 'A':
     case 'B':
@@ -13,5 +13,6 @@ void check_grade(char grade) {
       break;
     default:
       std::cout << "Nothing\n";
+      break;
   }
 }
