@@ -1,6 +1,6 @@
 #include <iostream>
 
-extern int array_sum(int, int);
+extern int array_sum(int[], int);
 
 int main() {
   int array[] = {1, 2, 3, 4, 5};
