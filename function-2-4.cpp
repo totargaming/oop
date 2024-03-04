@@ -1,10 +1,3 @@
-int sum_min_max(int integers[], int length) {
-  if (length <= 0) {
-    return -1;
-  }
-  int min{array_min(integers, length)}, max{array_max(integers, length)};
-  return min + max;
-}
 int array_min(int integers[], int length) {
   if (length <= 0) {
     return -1;
@@ -28,4 +21,11 @@ int array_max(int integers[], int length) {
     }
   }
   return max;
+}
+int sum_min_max(int integers[], int length) {
+  if (length <= 0) {
+    return -1;
+  }
+  int min{array_min(integers, length)}, max{array_max(integers, length)};
+  return min + max;
 }
