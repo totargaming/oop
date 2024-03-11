@@ -2,6 +2,7 @@
 #include <iostream>
 
 #include "workshop.h"
+
 int main() {
   double myValue = 10;
   std::cout << "Initial value: " << myValue << std::endl;
