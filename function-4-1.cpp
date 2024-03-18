@@ -1,5 +1,5 @@
-#include <vector>
 #include <iostream>
+#include <vector>
 #include <algorithm>
 int* readNumbers() {
     int* array = new int[10];
@@ -20,14 +20,15 @@ void printNumbers(int *numbers,int length)
     
 }
 int secondSmallestSum(int *numbers, int length) {
-    std::vector<int> sumRecord;
+    int sumRecord[10000];
+    int count{};
     for (int i = 0; i < length; i++) {
         int sum = 0;
         for (int j = i; j < length; j++) {
             sum += numbers[j];
-            sumRecord.push_back(sum);
+            sumRecord[count++] = sum;
         }
     }
-    std::sort(sumRecord.begin(), sumRecord.end());
+    std::sort(sumRecord, sumRecord+ length);
     return sumRecord[1];
 }
