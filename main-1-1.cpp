@@ -1,5 +1,5 @@
 #include <iostream>
-#include "person.h"
+#include "Person.h"
 int main() {
     Person* people = createPersonArray(3);
     for (int i = 0; i < 3; i++)

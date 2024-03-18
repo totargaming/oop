@@ -1,4 +1,4 @@
-#include "person.h"
+#include "Person.h"
 PersonList deepCopyPersonList(PersonList pl){
     PersonList list{new Person[pl.numPeople], pl.numPeople};
     for (int i = 0; i < pl.numPeople; i++)
