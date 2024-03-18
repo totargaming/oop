@@ -9,9 +9,7 @@ int* readNumbers() {
 }
 void printNumbers(int *numbers,int length) 
 {
-    if (length <= 0)
-    {
-return;    }
+   
     
     for (int i = 0; i < length; i++)
     {

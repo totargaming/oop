@@ -9,9 +9,7 @@ int* readNumbers() {
 }
 void printNumbers(int *numbers,int length) 
 {
-     if (length <= 0)
-    {
-return;    }
+    
     for (int i = 0; i < length; i++)
     {
         std::cout << i << " " << numbers[i] << std::endl;
@@ -19,9 +17,7 @@ return;    }
     
 }
 bool equalsArray(int *numbers1,int *numbers2,int length) {
-     if (length <= 0)
-    {
-return false;    }
+     
     for (int i = 0; i < length; i++)
     {
         if (numbers1[i] != numbers2[i])
