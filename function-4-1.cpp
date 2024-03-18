@@ -19,19 +19,8 @@ void printNumbers(int *numbers,int length)
     
 }
 int secondSmallestSum(int *numbers,int length)  {
-    int sumRecord[10000];
-    int count{0};
-    for (int i = 0; i < length; i++)
-    {
-        int sum{0};
-        for (int j = i; j < length; j++)
-        {
-            sumRecord[count++] = sum + numbers[j];
-        }
-        
-    }
-    std::sort(sumRecord, sumRecord +length);
-    return sumRecord[1];
+    std::sort(numbers,numbers + length);
+    return numbers[1];
     
 };
 
