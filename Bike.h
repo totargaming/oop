@@ -1,6 +1,7 @@
+#ifndef BIKE_H
+#define BIKE_H
 #include <iostream>
 #include <string>
-
 class Bike
 {
 private:
@@ -18,3 +19,4 @@ public:
     int getCode();          // returns the brand code number of bike
     ~Bike();
 };
+#endif // !BIKE_H
